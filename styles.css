@@ -162,17 +162,10 @@ html {
   color: #ffffff;
 }
 .skills {
-  position: absolute;
-  width: 1440px;
-  height: 482px;
-  left: 0px;
-  top: 910px;
+  padding-top: 100px;
+  padding-bottom: 8px;
 }
 .skills-title {
-  height: 80px;
-  left: 25.69%;
-  right: 25.69%;
-  top: 100px;
   width: 50%;
   margin: 0 auto 60px;
   background-image: linear-gradient(
@@ -183,19 +176,97 @@ html {
     #000 41px
   );
 }
-.skills-title > span {
-  position: absolute;
-  width: 152px;
-  height: 80px;
-  left: calc(50% - 152px / 2);
-  top: 0px;
+h2 {
+  position: relative;
+  width: fit-content;
   font-family: "Merriweather", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 80px;
   text-align: center;
-  background: #000000;
-  border-radius: 0px;
   color: #bdae82;
+  background-color: #000000;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-item {
+  flex-basis: 320px;
+  text-align: center;
+}
+
+.skills-item > h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 46px;
+  margin-bottom: 21px;
+}
+.skills-item > p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 10px;
+}
+.skills-item:last-child > p {
+  max-width: 305px;
+}
+
+.portfolio {
+  padding-top: 100px;
+}
+.portfolio-btns {
+  gap: 5px;
+  justify-content: center;
+  width: 895px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.portfolio-btns > button {
+  background: #000000;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  width: 220px;
+  height: 55px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #bdae82;
+}
+
+.portfolio-btns > button:hover {
+  background: #bdae82;
+  color: #000000;
+  cursor: pointer;
+}
+.portfolio-items {
+  gap: 25px;
+  height: 1145px;
+  width: 1400px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-img {
+  height: 560px;
+  width: 450px;
 }
