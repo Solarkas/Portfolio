@@ -5,8 +5,8 @@
 }
 body {
   background-color: #000000;
-  margin: 0 auto;
-  width: 1440px;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 }
 .desktop {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   min-height: 100vh;
   background-color: #000000;
   position: relative;
