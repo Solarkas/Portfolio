@@ -27,9 +27,21 @@
                     <li><a href="#Contacts">Contacts</a></li>
                 </ul>
             </nav>
+            <div class='hamburger' onclick="clickMenu()"></div>
+            <div class="menu_bg invisible">
+                <div class="close" onclick="clickMenu()"></div>
+                <ul class="frame" onclick="clickMenu()">
+                    <li class='liFrame'><a class='aFrame' href="#skills">Skills</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Portfolio">Portfolio</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Video">Video</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Price">Price</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Contacts">Contacts</a></li>
+                </ul>
+            </div>
             <div class="switch-lng">
-                <span>en</span> /
-                <span>ru</span>
+                <span class='en'>en</span>
+                <span class='simbol'>/</span>
+                <span class='ru'>ru</span>
             </div>
         </header>
         <main>
@@ -40,7 +52,7 @@
                         Save sincere emotions, romantic feelings and<br /> happy moments of life together with
                         professional photographer Alexa Rise
                     </p>
-                    <button class="btn">Hire me</button>
+                    <button class="btn heroBtn">Hire me</button>
                 </div>
             </section>
             <section class="skills" id="skills">
@@ -86,11 +98,15 @@
                 </div>
                 <div class="portfolio-items">
                     <figure class="portfolio-img"><img src="./assets/img/portfolio-img.jpg" alt="kiss"></figure>
-                    <figure class="portfolio-img"></figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-3.jpg" alt="baby play"></figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-4.jpg" alt="forest"></figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-5.jpg" alt="smile"></figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-6.jpg" alt="photo"></figure>
+                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-2.jpg" alt="horse"></figure>
+                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-3.jpg" alt="baby play">
+                    </figure>
+                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-4.jpg" alt="forest">
+                    </figure>
+                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-5.jpg" alt="smile">
+                    </figure>
+                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-6.jpg" alt="photo">
+                    </figure>
                 </div>
             </section>
             <section class="video" id="Video">
@@ -100,7 +116,7 @@
                     </span>
                 </div>
                 <div class="video-items">
-                    <img src="./assets/img/video-player.jpg">
+
                     <div class="video-btn"><img src="./assets/svg/Play_hover.png"></div>
                 </div>
 
@@ -142,7 +158,7 @@
                 </div>
             </section>
             <section class="contacts" id="Contacts">
-                <div class="contacts-container">
+                <div>
                     <h3>Contact me</h3>
                     <p><input type="email" placeholder="E-mail"><br />
                         <input type="tel" placeholder="Phone"><br />
@@ -154,11 +170,11 @@
         </main>
 
         <footer>
-            <div class="footer-data">
-                <span>©</span>
-                <span>2022</span>
-                <span><a href="https://github.com/Solarkas">github</a></span>
-                <span class="rss"><a href="https://rs.school/js-stage0/">Rolling
+            <div>
+                <span class='c'>©</span>
+                <span class='year'>2022</span>
+                <span class='github'><a href="https://github.com/Solarkas">github</a></span>
+                <span class="rolling rss"><a href="https://rs.school/js-stage0/">Rolling
                         Scopes School</a></span>
                 <span class="soc"><img src="./assets/svg/inst1.png"></span>
                 <span class="soc"><img src="./assets/svg/fb1.png"></span>
