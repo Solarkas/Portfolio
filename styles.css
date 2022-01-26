@@ -530,6 +530,12 @@ footer > div > p {
 .btnRu {
   color: black;
 }
+.menu_bg {
+  display: none;
+}
+.aFooter {
+  text-decoration: none;
+}
 
 @media (max-width: 1440px) {
   .skills-items {
@@ -601,6 +607,7 @@ footer > div > p {
     background-repeat: no-repeat;
   }
   .menu_bg {
+    display: none;
     position: fixed;
     width: 620px;
     height: 100%;
@@ -624,6 +631,7 @@ footer > div > p {
     z-index: 9999;
   }
   .invisible {
+    display: block;
     transform: translateX(0%);
   }
   .close:hover {
@@ -1135,5 +1143,8 @@ footer > div > p {
     font-size: 20px;
     line-height: 50px;
     color: #ffffff;
+  }
+  .aFooter {
+    text-decoration: none;
   }
 }
