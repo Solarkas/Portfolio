@@ -343,7 +343,7 @@ html {
 .price-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 50px;
   width: 1400px;
   height: 505px;
   margin: 0 auto;
