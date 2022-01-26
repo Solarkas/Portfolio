@@ -343,7 +343,7 @@ html {
 .price-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 25px;
   width: 1400px;
   height: 505px;
   margin: 0 auto;
@@ -883,6 +883,7 @@ footer > div > p {
   .price-items {
     position: absolute;
     width: 420px;
+    gap: 50px;
     height: 505px;
     left: calc(50% - 420px / 2);
     top: calc(50% - 505px / 2 - 490px);
