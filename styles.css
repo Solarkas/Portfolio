@@ -603,13 +603,13 @@ footer > div > p {
   .menu_bg {
     position: fixed;
     width: 620px;
-    height: 1024px;
-    left: 148px;
+    height: 100%;
+    right: 0;
     top: 0px;
     display: block;
     background: #000000;
     z-index: 9999;
-    transform: translateX(0);
+    transform: translateX(100%);
     transition: 300ms;
   }
   .close {
@@ -624,7 +624,7 @@ footer > div > p {
     z-index: 9999;
   }
   .invisible {
-    transform: translateX(-150%);
+    transform: translateX(0%);
   }
   .close:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
