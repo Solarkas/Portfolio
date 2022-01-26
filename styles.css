@@ -702,9 +702,13 @@ footer > div > p {
     height: 590px;
     left: 0px;
     top: 0px;
-    background-image: url(./assets/img/header-bg.jpg);
+    background-image: url(./assets/img/bg-tablet.jpg);
     background-repeat: no-repeat;
     background-size: 768px;
+  }
+  .btnVideo {
+    width: 65px;
+    height: 65px;
   }
 
   .hero-title {
@@ -863,7 +867,7 @@ footer > div > p {
     height: 418px;
     left: -20px;
     top: 210px;
-    background: url("./assets/img/video-player.jpg");
+    background: url("./assets/img/video-player-2.jpg");
   }
   .video-btn {
     position: absolute;
@@ -935,7 +939,7 @@ footer > div > p {
     left: 0px;
     top: 7722px;
 
-    background: url(./assets/img/contacts.jpg);
+    background: url(./assets/img/contacts-2.jpg);
   }
   .contacts > div {
     padding-top: 0px;
