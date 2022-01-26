@@ -20,99 +20,101 @@
             <figure><img class="logo" src="/assets/svg/logo.svg"></figure>
             <nav>
                 <ul class="nav">
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#Video">Video</a></li>
-                    <li><a href="#Price">Price</a></li>
-                    <li><a href="#Contacts">Contacts</a></li>
+                    <li><a href="#skills" data-i18="skills">Skills</a></li>
+                    <li><a href="#Portfolio" data-i18="Portfolio">Portfolio</a></li>
+                    <li><a href="#Video" data-i18="Video">Video</a></li>
+                    <li><a href="#Price" data-i18="Price">Price</a></li>
+                    <li><a href="#Contacts" data-i18="Contacts">Contacts</a></li>
                 </ul>
             </nav>
             <div class='hamburger' onclick="clickMenu()"></div>
-            <div class="menu_bg invisible">
-                <div class="close" onclick="clickMenu()"></div>
+            <div class="menu_bg invisible h2Ru">
+                <div class="close btnRu" onclick="clickMenu()"></div>
                 <ul class="frame" onclick="clickMenu()">
-                    <li class='liFrame'><a class='aFrame' href="#skills">Skills</a></li>
-                    <li class='liFrame'><a class='aFrame' href="#Portfolio">Portfolio</a></li>
-                    <li class='liFrame'><a class='aFrame' href="#Video">Video</a></li>
-                    <li class='liFrame'><a class='aFrame' href="#Price">Price</a></li>
-                    <li class='liFrame'><a class='aFrame' href="#Contacts">Contacts</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#skills" data-i18="skills">Skills</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Portfolio" data-i18="Portfolio">Portfolio</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Video" data-i18="Video">Video</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Price" data-i18="Price">Price</a></li>
+                    <li class='liFrame'><a class='aFrame' href="#Contacts" data-i18="Contacts">Contacts</a></li>
                 </ul>
             </div>
             <div class="switch-lng">
-                <span class='en'>en</span>
+                <span class='en select' >en</span>
                 <span class='simbol'>/</span>
-                <span class='ru'>ru</span>
+                <span class='ru' >ru</span>
+              
             </div>
+            
         </header>
         <main>
             <section class="hero">
                 <div class="hero-div">
-                    <h1 class="hero-title">Alexa Rise</h1>
-                    <p class="hero-text">
-                        Save sincere emotions, romantic feelings and<br /> happy moments of life together with
+                    <h1 class="hero-title" data-i18="hero-title">Alexa Rise</h1>
+                    <p class="hero-text" data-i18="hero-text">
+                        Save sincere emotions, romantic feelings and happy moments of life together with
                         professional photographer Alexa Rise
                     </p>
-                    <button class="btn heroBtn">Hire me</button>
+                    <a class="btn textDecor" href="#Contacts"><button class="btn heroBtn" data-i18="hire">Hire me</button></a>
                 </div>
             </section>
-            <section class="skills" id="skills">
-                <div class="skills-title">
-                    <span>
-                        <h2>Skills</h2>
+            <section class="skills h2Ru" id="skills">
+                <div class="skills-title h2Ru">
+                    <span class='h2Ru'>
+                        <h2 class='h2 h2Ru' data-i18="skills">Skills</h2>
                     </span>
                 </div>
                 <div class="skills-items">
                     <div class="skills-item">
                         <figure><img src="./assets/svg/camera1.png" alt="camera"></figure>
-                        <h3>Digital photography</h3>
-                        <p>High-quality photos in the studio and on the nature</p>
+                        <h3 class='h3 h2Ru' data-i18="skill-title-1">Digital photography</h3>
+                        <p class='p h2Ru' data-i18="skill-text-1">High-quality photos in the studio and on the nature</p>
                     </div>
                     <div class="skills-item">
                         <figure><img src="./assets/svg/video1.png" alt="video"></figure>
-                        <h3>Video shooting</h3>
-                        <p>Capture your moments so that they always stay with you</p>
+                        <h3 class='h3 h2Ru' data-i18="skill-title-2">Video shooting</h3>
+                        <p class='p h2Ru' data-i18="skill-text-2">Capture your moments so that they always stay with you</p>
                     </div>
                     <div class="skills-item">
                         <figure><img src="./assets/svg/image1.png" alt="image"></figure>
-                        <h3>Rotouch</h3>
-                        <p>I strive to make photography surpass reality</p>
+                        <h3 class='h3 h2Ru' data-i18="skill-title-3">Rotouch</h3>
+                        <p class='p h2Ru' data-i18="skill-text-3">I strive to make photography surpass reality</p>
                     </div>
                     <div class="skills-item">
                         <figure><img src="./assets/svg/mic1.png" alt="microphone"></figure>
-                        <h3>Audio</h3>
-                        <p>Professional sounds recording<br /> for video, advertising, portfolio</p>
+                        <h3 class='h3 h2Ru' data-i18="skill-title-4">Audio</h3>
+                        <p class='p h2Ru' data-i18="skill-text-4">Professional sounds recording<br /> for video, advertising, portfolio</p>
                     </div>
                 </div>
             </section>
-            <section class="portfolio" id="Portfolio">
-                <div class="skills-title">
-                    <span>
-                        <h2>Portfolio</h2>
+            <section class="portfolio h2Ru" id="Portfolio">
+                <div class="skills-title h2Ru">
+                    <span class='h2Ru'>
+                        <h2 class='h2 h2Ru' data-i18="Portfolio">Portfolio</h2>
                     </span>
                 </div>
                 <div class="portfolio-btns">
-                    <button class="button">Winter</button>
-                    <button class="button">Spring</button>
-                    <button class="button">Summer</button>
-                    <button class="click-btn">Autumn</button>
+                    <button class="imgB button bt2" data-i18="winter" onclick="switchPhoto('winter')">Winter</button>
+                    <button class="imgB button bt2" data-i18="spring" onclick="switchPhoto('spring')">Spring</button>
+                    <button class="imgB button bt2" data-i18="summer" onclick="switchPhoto('summer')">Summer</button>
+                    <button class="imgB button click-btn bt2" data-i18="autumn" onclick="switchPhoto('autumn')">Autumn</button>
                 </div>
                 <div class="portfolio-items">
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img.jpg" alt="kiss"></figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-2.jpg" alt="horse"></figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-3.jpg" alt="baby play">
-                    </figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-4.jpg" alt="forest">
-                    </figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-5.jpg" alt="smile">
-                    </figure>
-                    <figure class="portfolio-img"><img src="./assets/img/portfolio-img-6.jpg" alt="photo">
-                    </figure>
+                    <img class="portfolio-img" src="./assets/img/autumn1.jpg" alt="kiss">
+                    <img class="portfolio-img" src="./assets/img/autumn2.jpg" alt="horse">
+                    <img class="portfolio-img" src="./assets/img/autumn3.jpg" alt="baby play">
+                    
+                    <img class="portfolio-img" src="./assets/img/autumn4.jpg" alt="forest">
+                    
+                    <img class="portfolio-img" src="./assets/img/autumn5.jpg" alt="smile">
+                    
+                    <img class="portfolio-img" src="./assets/img/autumn6.jpg" alt="photo">
+                    
                 </div>
             </section>
             <section class="video" id="Video">
                 <div class="skills-title">
-                    <span>
-                        <h2>Video</h2>
+                    <span class='h2Ru'>
+                        <h2 class='h2 h2Ru' data-i18="Video">Video</h2>
                     </span>
                 </div>
                 <div class="video-items">
@@ -121,60 +123,60 @@
                 </div>
 
             </section>
-            <section class="price" id="Price">
-                <div class="skills-title">
-                    <span>
-                        <h2>Price</h2>
+            <section class="price h2Ru" id="Price">
+                <div class="skills-title h2Ru">
+                    <span class='h2Ru'>
+                        <h2 class='h2 h2Ru' data-i18="Price">Price</h2>
                     </span>
                 </div>
-                <div class="price-items">
-                    <div class="price-item">
+                <div class="price-items h2Ru">
+                    <div class="price-item h2Ru">
 
-                        <h3>Standard</h3>
+                        <h3 class='h3Price h2Ru'>Standard</h3>
                         <h4>500 $</h4>
-                        <p>One location<br />120 photos in color<br />12 photos in retouch<br />Readiness 2-3
+                        <p class='pPrice h2Ru' data-i18="price-description-1-span-1" class='h2Ru'>One location<br />120 photos in color<br />12 photos in retouch<br />Readiness 2-3
                             weeks<br />Make up, visage
                         </p>
-                        <button class="btn">Order shooting</button>
+                        <button class="btn" data-i18="order">Order shooting</button>
                     </div>
-                    <div class="price-item">
+                    <div class="price-item h2Ru">
 
-                        <h3>Premium</h3>
+                        <h3 class='h3Price h2Ru'>Premium</h3>
                         <h4>700 $</h4>
-                        <p>One or two locations<br />200 photos in color<br />20 photos in retouch<br />Readiness 1-2
+                        <p class='pPrice h2Ru' data-i18="price-description-2-span-2">One or two locations<br />200 photos in color<br />20 photos in retouch<br />Readiness 1-2
                             weeks<br />Make up, visage
                         </p>
-                        <button class="btn">Order shooting</button>
+                        <button class="btn" data-i18="order">Order shooting</button>
                     </div>
                     <div class="price-item">
 
-                        <h3>Gold</h3>
+                        <h3 class='h3Price h2Ru'>Gold</h3>
                         <h4>1000 $</h4>
-                        <p>Three locations or more<br />300 photos in color<br />50 photos in retouch<br />Readiness 1
+                        <p class='pPrice h2Ru' data-i18="price-description-2-span-3">Three locations or more<br />300 photos in color<br />50 photos in retouch<br />Readiness 1
                             week<br />Make up, visage, hairstyle
                         </p>
-                        <button class="btn">Order shooting</button>
+                        <button class="btn" data-i18="order">Order shooting</button>
                     </div>
                 </div>
             </section>
-            <section class="contacts" id="Contacts">
+            <section class="contacts" id="Contacts" >
                 <div>
-                    <h3>Contact me</h3>
+                    <h3 data-i18="contact-me">Contact me</h3>
                     <p><input type="email" placeholder="E-mail"><br />
                         <input type="tel" placeholder="Phone"><br />
                         <textarea placeholder="Message"></textarea>
-                        <button class="btn">Send message</button>
+                        <button class="btn" data-i18="send-message">Send message</button>
                     </p>
                 </div>
             </section>
         </main>
 
-        <footer>
+        <footer style="background-color: black;">
             <div>
                 <span class='c'>©</span>
                 <span class='year'>2022</span>
-                <span class='github'><a href="https://github.com/Solarkas">github</a></span>
-                <span class="rolling rss"><a href="https://rs.school/js-stage0/">Rolling
+                <span class='github'><a class='aFooter' href="https://github.com/Solarkas">github</a></span>
+                <span class="rolling rss"><a class="aFooter" href="https://rs.school/js-stage0/">Rolling
                         Scopes School</a></span>
                 <span class="soc"><img src="./assets/svg/inst1.png"></span>
                 <span class="soc"><img src="./assets/svg/fb1.png"></span>
