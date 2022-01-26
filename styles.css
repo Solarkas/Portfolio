@@ -1154,4 +1154,11 @@ footer > div > p {
     width: 75px;
     height: 75px;
   }
+  .h2 {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 80px;
+  }
 }
