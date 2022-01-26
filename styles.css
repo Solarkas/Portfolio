@@ -879,6 +879,7 @@ footer > div > p {
     height: 1905px;
     left: 0px;
     top: 5817px;
+    margin-top: 0;
   }
   .price-items {
     position: absolute;
