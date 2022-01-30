@@ -85,6 +85,7 @@ const getTranslate = (e) => {
       attributes[i].innerHTML = i18Obj.en[attributes[i].dataset.i18];
     }
   }
+  setLocalStorage(e);
 };
 
 const clickMenu = () => {
@@ -159,23 +160,22 @@ const switchTheme = () => {
   document
     .querySelectorAll(".h2Ru")
     .forEach((e) => e.classList.toggle("light"));
-  console.log(document.querySelector(".desktop"));
   if (Theme.classList.contains("select")) {
     return (Theme.src = `./assets/svg/carbon_sun.png`);
   } else {
     return (Theme.src = `./assets/svg/vector.png`);
   }
 };
-
-function towelSort(matrix = []) {
-  let a = [];
-
-  for (let i = 1; i < matrix.length; i = i + 2) {
-    matrix[i].reverse();
-  }
-  a = [].concat(...matrix);
-
-  return a;
+function setLocalStorage(lang) {
+  console.log("setLocalStorage", lang);
+  localStorage.setItem("lang", lang);
 }
 
-console.log(towelSort([]));
+function getLocalStorage() {
+  if (localStorage.getItem("lang")) {
+    const lang = localStorage.getItem("lang");
+    getTranslate(lang);
+    switchLng(lang);
+  }
+}
+window.addEventListener("load", getLocalStorage);
