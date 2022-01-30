@@ -130,13 +130,13 @@ const switchPhoto = (e) => {
 
   portfolioImages.forEach((img, index) => {
     if (e === "winter") {
-      return (img.src = `./assets/img/winter${index + 1}.jpg`);
+      return (img.src = `./assets/img/winter/winter${index + 1}.jpg`);
     } else if (e === "autumn") {
-      return (img.src = `./assets/img/autumn${index + 1}.jpg`);
+      return (img.src = `./assets/img/autumn/autumn${index + 1}.jpg`);
     } else if (e === "summer") {
-      return (img.src = `./assets/img/summer${index + 1}.jpg`);
+      return (img.src = `./assets/img/summer/summer${index + 1}.jpg`);
     } else {
-      return (img.src = `./assets/img/spring${index + 1}.jpg`);
+      return (img.src = `./assets/img/spring/spring${index + 1}.jpg`);
     }
   });
 };
@@ -166,3 +166,16 @@ const switchTheme = () => {
     return (Theme.src = `./assets/svg/vector.png`);
   }
 };
+
+function towelSort(matrix = []) {
+  let a = [];
+
+  for (let i = 1; i < matrix.length; i = i + 2) {
+    matrix[i].reverse();
+  }
+  a = [].concat(...matrix);
+
+  return a;
+}
+
+console.log(towelSort([]));

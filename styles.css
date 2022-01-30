@@ -530,6 +530,13 @@ footer > div > p {
 .btnRu {
   color: black;
 }
+.menu_bg {
+  display: none;
+}
+.aFooter {
+  text-decoration: none;
+  color: white;
+}
 
 @media (max-width: 1440px) {
   .skills-items {
@@ -601,15 +608,16 @@ footer > div > p {
     background-repeat: no-repeat;
   }
   .menu_bg {
+    display: none;
     position: fixed;
     width: 620px;
-    height: 1024px;
-    left: 148px;
+    height: 100%;
+    right: 0;
     top: 0px;
     display: block;
     background: #000000;
     z-index: 9999;
-    transform: translateX(0);
+    transform: translateX(100%);
     transition: 300ms;
   }
   .close {
@@ -624,7 +632,8 @@ footer > div > p {
     z-index: 9999;
   }
   .invisible {
-    transform: translateX(-150%);
+    display: block;
+    transform: translateX(0%);
   }
   .close:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
@@ -693,7 +702,7 @@ footer > div > p {
     height: 590px;
     left: 0px;
     top: 0px;
-    background-image: url(./assets/img/header-bg.jpg);
+    background-image: url(./assets/img/bg-tablet.jpg);
     background-repeat: no-repeat;
     background-size: 768px;
   }
@@ -854,7 +863,7 @@ footer > div > p {
     height: 418px;
     left: -20px;
     top: 210px;
-    background: url("./assets/img/video-player.jpg");
+    background: url("./assets/img/video-player-2.jpg");
   }
   .video-btn {
     position: absolute;
@@ -870,10 +879,12 @@ footer > div > p {
     height: 1905px;
     left: 0px;
     top: 5817px;
+    margin-top: 0;
   }
   .price-items {
     position: absolute;
     width: 420px;
+    gap: 50px;
     height: 505px;
     left: calc(50% - 420px / 2);
     top: calc(50% - 505px / 2 - 490px);
@@ -925,7 +936,7 @@ footer > div > p {
     left: 0px;
     top: 7722px;
 
-    background: url(./assets/img/contacts.jpg);
+    background: url(./assets/img/contacts-2.jpg);
   }
   .contacts > div {
     padding-top: 0px;
@@ -1007,6 +1018,9 @@ footer > div > p {
     font-size: 20px;
     line-height: 24px;
   }
+  .aFooter {
+    text-decoration: none;
+  }
   .c {
     position: absolute;
     width: 19px;
@@ -1019,6 +1033,7 @@ footer > div > p {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
+    text-decoration: none;
   }
   .year {
     position: absolute;
@@ -1032,6 +1047,7 @@ footer > div > p {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
+    text-decoration: none;
   }
   .rolling {
     position: absolute;
@@ -1046,6 +1062,7 @@ footer > div > p {
     line-height: 24px;
     padding-left: 0px;
     padding-right: 0px;
+    text-decoration: none;
   }
   .soc {
     position: relative;
@@ -1057,6 +1074,7 @@ footer > div > p {
     height: 50px;
     left: 270px;
     top: 112px;
+    text-decoration: none;
   }
   .soc:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
@@ -1118,5 +1136,30 @@ footer > div > p {
     line-height: 40px;
     text-align: center;
     color: #000000;
+  }
+  footer > div {
+    margin: 0 auto;
+    max-width: 768px;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #ffffff;
+  }
+  .aFooter {
+    text-decoration: none;
+    color: white;
+  }
+  .btnVideo {
+    width: 75px;
+    height: 75px;
+  }
+  .h2 {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 80px;
   }
 }
