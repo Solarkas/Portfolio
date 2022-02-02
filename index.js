@@ -155,17 +155,20 @@ const switchTheme = () => {
     .forEach((e) => e.classList.toggle("light"));
   if (Theme.classList.contains("select")) {
     themeLocal = "dark";
-    setLocalStorage(themeLocal);
+    setLocalTheme(themeLocal);
     return (Theme.src = `./assets/svg/carbon_sun.png`);
   } else {
     themeLocal = "light";
-    setLocalStorage(themeLocal);
+    setLocalTheme(themeLocal);
     return (Theme.src = `./assets/svg/vector.png`);
   }
 };
 function setLocalStorage(lang) {
-  localStorage.setItem("themeLocal", themeLocal);
   localStorage.setItem("lang", lang);
+}
+
+function setLocalTheme(theme) {
+  localStorage.setItem("themeLocal", theme);
 }
 
 function getLocalStorage() {
