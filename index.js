@@ -1,3 +1,5 @@
+let themeLocal = "";
+
 const i18Obj = {
   en: {
     skills: "Skills",
@@ -152,13 +154,17 @@ const switchTheme = () => {
     .querySelectorAll(".h2Ru")
     .forEach((e) => e.classList.toggle("light"));
   if (Theme.classList.contains("select")) {
+    themeLocal = "dark";
+    setLocalStorage(themeLocal);
     return (Theme.src = `./assets/svg/carbon_sun.png`);
   } else {
+    themeLocal = "light";
+    setLocalStorage(themeLocal);
     return (Theme.src = `./assets/svg/vector.png`);
   }
 };
 function setLocalStorage(lang) {
-  console.log("setLocalStorage", lang);
+  localStorage.setItem("themeLocal", themeLocal);
   localStorage.setItem("lang", lang);
 }
 
@@ -169,4 +175,12 @@ function getLocalStorage() {
     switchLng(lang);
   }
 }
-window.addEventListener("load", getLocalStorage);
+function local() {
+  const themeLocal = localStorage.getItem("themeLocal");
+  if (themeLocal === "dark") {
+    return false;
+  } else if (themeLocal === "light") {
+    switchTheme();
+  }
+}
+window.addEventListener("load", getLocalStorage, local());
