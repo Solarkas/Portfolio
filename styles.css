@@ -537,9 +537,7 @@ footer > div > p {
   text-decoration: none;
   color: white;
 }
-.select {
-  color: #bdae82;
-}
+
 
 @media (max-width: 1440px) {
   .skills-items {
@@ -1165,7 +1163,5 @@ footer > div > p {
     font-size: 32px;
     line-height: 80px;
   }
-  .select {
-  color: #bdae82;
 }
 }
